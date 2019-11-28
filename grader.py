@@ -55,6 +55,10 @@ compiler.wait()
 correct = 0
 incorrect = 0
 try:
+    originalIn = open(os.path.join(solutionPathParent, os.path.basename(
+        solutionPathParent)+".in"), "r").read()
+    originalOut = open(os.path.join(solutionPathParent, os.path.basename(
+        solutionPathParent)+".out"), "r").read()
     for filename in os.listdir(testCasePath):
         testName = os.path.splitext(filename)[0]
         if(os.path.splitext(filename)[-1] == ".in"):
@@ -70,5 +74,9 @@ try:
             print(testName+" ("+format(execTime, '.3f') + "s"+")" +
                   ": "+("✅" if result else "❌"))
     print("Correct: "+str(correct)+", Incorrect: "+str(incorrect))
+    open(os.path.join(solutionPathParent, os.path.basename(
+        solutionPathParent)+".in"), "w").write(originalIn)
+    open(os.path.join(solutionPathParent, os.path.basename(
+        solutionPathParent)+".out"), "w").write(originalOut)
 except Exception:
     pass
