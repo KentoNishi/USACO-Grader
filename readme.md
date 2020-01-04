@@ -30,4 +30,4 @@ Running the program normally:
     > Path is an absolute file path to your test case folder.
 
     > Test case folders should contain files with extensions ``in`` and ``out``.
-* In editors such as [Visual Studio Code](https://code.visualstudio.com/), you can configure this program as a [task](https://code.visualstudio.com/Docs/editor/tasks). An example of the task configurations can be found [here](https://github.com/KentoNishi/USACO-Solutions/tree/master/.vscode).
+* In editors such as [Visual Studio Code](https://code.visualstudio.com/), you can configure this program as a [task](https://code.visualstudio.com/Docs/editor/tasks). An example of the task configurations can be found [here](https://github.com/KentoNishi/.vscode/tree/USACO-Settings).
